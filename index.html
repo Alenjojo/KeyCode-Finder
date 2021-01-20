@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyCode-Finder</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: #ffd000;
+        }
+        h1{
+            font-size: 8em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'arial';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        h3{
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'arial';
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="keycode"></h1>
+    <h3 id="key"></h3>
+    <script>
+        window.addEventListener('keydown', function(e){
+            document.getElementById("keycode").innerHTML = e.keyCode;
+            document.getElementById("key").innerHTML = e.key;
+        });
+    </script>
+</body>
+</html>
